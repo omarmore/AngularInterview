@@ -13,6 +13,7 @@ export class PostDetailComponent {
 
   detalles:any=[];
   cons:number;
+  fechaCommen:any;
 
   constructor( private activateRouter:ActivatedRoute,
                public _listaService:ListService
