@@ -1,0 +1,16 @@
+
+
+  <div class="alert " role="alert" style=" background-color:#E8F8F5 ">
+    <h4 class="alert-heading">Comments {{id}}</h4>
+        <p>Last comment : {{myDate | date:'y, MMM, d' }}</p>
+        <div class="alert alert-success"  *ngFor="let det of comentarios">
+            Name : {{det.name}} <br>
+            Body : {{det.body}} <br>
+            Email : {{det.email}}
+            
+        </div>
+        <div class="container align-self-center">
+            <button type="button" class="btn btn-outline-info" (click)="EnviarFecha()">Emitir Fecha</button>
+        </div>
+        
+  </div>
