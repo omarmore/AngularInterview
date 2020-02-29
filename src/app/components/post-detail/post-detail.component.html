@@ -1,12 +1,12 @@
 
 <div class="card">
-  <app-commments [id] = "detalles.id"  (fechaEnviada) = "fechaCommen = $event" ></app-commments>
+  
     <h5 class="card-header" style=" background-color:#E8F8F5 ">Detail Post : {{detalles.id}}  <span class="float-right"> Last comments : <em>{{fechaCommen | date:'y, MMM, d' }}</em></span>  </h5>
  
     <div class="card-body">
       <h5 class="card-title">{{detalles.title}}</h5>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illo error eligendi magni impedit odit, possimus rem quod reprehenderit asperiores laborum sapiente aliquam dolore aperiam, incidunt ab vel. Dolorem, nam!</p>
-      
+      <app-commments [id] = "detalles.id"  (fechaEnviada) = "fechaCommen = $event" ></app-commments>
       <a class="nav-link" [routerLink]="['/posts']" >Regresar...</a>
     </div>
   </div>
