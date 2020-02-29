@@ -9,7 +9,7 @@ import { Router } from "@angular/router";
 })
 export class PostListComponent implements OnInit {
 
-  constructor(private _listaService:ListService, private router:Router) { }
+  constructor(public _listaService:ListService, private router:Router) { }
 
   ngOnInit() {
   }
